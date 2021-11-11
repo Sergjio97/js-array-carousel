@@ -21,3 +21,20 @@ const text = [
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ];
+
+let margedArray = [...items,...title,...text];
+
+
+
+let itemsContent = "";
+
+for ( let i = 0; i < items.length; i++){
+    itemsContent += `
+    <div class="item">                   
+        <img src="${items[i]}" alt="">
+    </div>`;
+};
+
+const itemsContainer = document.querySelector(".items-box");
+
+itemsContainer.innerHTML = itemsContent;
