@@ -37,6 +37,7 @@
     width: 20%;
     height: 100%;
     background-color: lightslategrey;
+    position: relative;
 }
 
 .item {
@@ -49,4 +50,32 @@
 .item img {
     height: 100%;
     width: 100%;
+}
+
+.top-arr {
+    width: 30px;
+    height: 30px;
+    background-color: darkgray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.bottom-arr {
+    width: 30px;
+    height: 30px;
+    background-color: darkgray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
